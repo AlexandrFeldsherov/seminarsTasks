@@ -6,14 +6,10 @@
 918 -> 8*/
 
 Console.Write("Введите трехзначное число ");
-string number = Console.ReadLine();
-int numberOfCharacters = number.Length;
-
-while (numberOfCharacters != 3)
+int number = Convert.ToInt32(Console.ReadLine());
+while (number/1000 != 0)
 {
     Console.Write("Вы ввели не трехзначное число, попоробуйте еще раз: ");
-    number = Console.ReadLine();
-    numberOfCharacters = number.Length;
+    number = Convert.ToInt32(Console.ReadLine());
 }
-int outputNumber = Convert.ToInt32(number.Remove(0, 2));
-Console.WriteLine(outputNumber);
+Console.WriteLine(number%10);

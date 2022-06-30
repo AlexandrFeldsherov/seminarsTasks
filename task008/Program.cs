@@ -4,8 +4,9 @@
 8 -> 2, 4, 6, 8*/
 
 Console.Write("Ведите число ");
-int wholeNumber = Convert.ToInt32(Console.ReadLine());
-for (int outputNumber = 1; outputNumber <= wholeNumber; outputNumber++)
+int number = Convert.ToInt32(Console.ReadLine());
+for (int outputNumber = 1; outputNumber <= number; outputNumber++)
 {
     int remains = outputNumber % 2;
     if (remains == 0) Console.Write($"{outputNumber}, ");
+}
