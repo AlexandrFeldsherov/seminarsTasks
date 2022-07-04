@@ -5,8 +5,9 @@
 2 -> " -2, -1, 0, 1, 2"*/
 Console.Write("Введите число ");
 int number = Convert.ToInt32(Console.ReadLine());
-number = Math.Abs(number);
-for (int cycleCounter = -number; cycleCounter <= number; cycleCounter++)
+int numberMeaning=(Math.Abs(number) * 2);
+int numberSign = number / Math.Abs(number);
+for (int i = 0; i <= numberMeaning; i++)
 {
-    Console.Write($"{cycleCounter}, ");
+     Console.Write($"{-(number - (numberSign)*i)}, ");
 }

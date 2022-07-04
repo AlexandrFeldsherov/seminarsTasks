@@ -3,7 +3,7 @@
 5 -> 2, 4
 8 -> 2, 4, 6, 8*/
 
-Console.Write("Ведите число ");
+Console.Write("Ведите число положительное число ");
 int number = Convert.ToInt32(Console.ReadLine());
 for (int outputNumber = 1; outputNumber <= number; outputNumber++)
 {
